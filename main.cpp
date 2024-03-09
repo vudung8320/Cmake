@@ -1,8 +1,8 @@
 #include <iostream>
+// #include "config.h"
 
 int main(void)
 {
-  std::cout << "Hello World Desktop" << std::endl;
-
+  std::cout << "First Example" << std::endl;
   return 0;
 }
