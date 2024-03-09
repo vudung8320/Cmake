@@ -1,8 +1,11 @@
 #include <iostream>
-// #include "config.h"
+
+#include "my_lib.h"
+
 
 int main(void)
 {
-  std::cout << "First Example" << std::endl;
+  print_hello_world();
+
   return 0;
 }

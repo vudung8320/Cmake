@@ -9,10 +9,11 @@
 cmake_minimum_required(VERSION 3.27)
 
 # Set the project name
-project(Example_1
-        VERSION 1.0.0
-        LANGUAGES C CXX)
+project(Example_1 VERSION 1.0.0 LANGUAGES C CXX)
+
+add_library(Library STATIC my_lib.cpp)
 
 # Add an executable
 add_executable(Example_1 main.cpp)
 
+target_link_libraries(Example_1 PUBLIC Library)
