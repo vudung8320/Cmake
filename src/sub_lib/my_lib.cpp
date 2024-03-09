@@ -4,7 +4,7 @@
 
 void print_hello_world()
 {
-  std::cout << "Hello Meomeo" << std::endl;
+  std::cout << "Hello" << std::endl;
 }
 
 

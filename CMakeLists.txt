@@ -11,9 +11,7 @@ cmake_minimum_required(VERSION 3.27)
 # Set the project name
 project(Example_1 VERSION 1.0.0 LANGUAGES C CXX)
 
-add_library(Library STATIC my_lib.cpp)
-
-# Add an executable
-add_executable(Example_1 main.cpp)
-
-target_link_libraries(Example_1 PUBLIC Library)
+# Define src first because library define out library
+# And library is used in out application
+add_subdirectory(src)
+add_subdirectory(app)

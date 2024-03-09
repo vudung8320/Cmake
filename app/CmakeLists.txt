@@ -1,0 +1,6 @@
+
+# Add executable file
+add_executable(Example_1 main.cpp)
+
+# Link library
+target_link_libraries(Example_1 PUBLIC Library)
