@@ -1,6 +1,6 @@
 
 # Add executable file
-add_executable(Example_1 main.cpp)
+add_executable(${EXECUTABLE_NAME} main.cpp)
 
 # Link library
-target_link_libraries(Example_1 PUBLIC Library)
+target_link_libraries(${EXECUTABLE_NAME} PUBLIC ${LIBRARY_NAME})
